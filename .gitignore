@@ -1,31 +1,50 @@
-# ---- Maven
-target/
-
-# ---- IntelliJ IDEA
-*.iws
-*.iml
-*.ipr
-.idea/
-
-# ---- Eclipse
+# eclipse
 .classpath
 .project
 .settings
 
-# ---- Mac OS X
-.DS_Store?
-Icon?
-# Thumbnails
-._*
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
+# maven
+target/
+*/src/main/java/META-INF/
+*.versionsBackup
+*.releaseBackup
+bin/
 
-# ---- Windows
-# Windows image file caches
-Thumbs.db 
-# Folder config file
-Desktop.ini
+# common junk
+*.log
+*.diff
+*.patch
+*.sw[a-p]
+*.bak
+*.backup
+*.debug
+*.dump
+.attach_pid*
 
-.sonar
-.scannerwork
+# vim 
+.*.sw[a-p]
+*~
+~*
+
+# intellij / android studio
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Mac filesystem dust
+.DS_Store
+
+# pmd
+.pmdruleset
+.pmd
+
+# netbeans
+/nbproject
+
+# merge tooling
+*.orig
+
+# test generated content
+*/src/test/*/WEB-INF/lib/test*.jar
+.flattened-pom.xml
