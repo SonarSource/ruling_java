@@ -1,11 +1,3 @@
-[submodule "eclipse_jetty"]
-	path = eclipse_jetty
-	url = https://github.com/SonarSource/ruling_java.git
-	branch = eclipse-jetty-main
-[submodule "eclipse_jetty-similar-to-main"]
-	path = eclipse_jetty-similar-to-main
-	url = https://github.com/SonarSource/ruling_java.git
-	branch = eclipse-jetty-same-issues-as-main
 [submodule "eclipse-jetty-similar-to-main"]
 	path = eclipse-jetty-similar-to-main
 	url = https://github.com/SonarSource/ruling_java.git
