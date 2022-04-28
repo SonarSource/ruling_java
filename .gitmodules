@@ -6,3 +6,6 @@
 	path = eclipse-jetty
 	url = https://github.com/SonarSource/ruling_java.git
 	branch = eclipse-jetty-main
+[submodule "eclipse-jetty-similar-to-main-small"]
+	path = eclipse-jetty-similar-to-main-small
+	url = https://github.com/SonarSource/ruling_java.git
