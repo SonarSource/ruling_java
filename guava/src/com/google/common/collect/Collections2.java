@@ -18,7 +18,6 @@ package com.google.common.collect;
 
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkNotNull;
-import static com.google.common.base.Predicates.and;
 import static com.google.common.base.Predicates.in;
 import static com.google.common.base.Predicates.not;
 import static com.google.common.collect.CollectPreconditions.checkNonnegative;
@@ -196,12 +195,12 @@ public final class Collections2 {
 
     @Override
     public boolean removeAll(final Collection<?> collection) {
-      return Iterables.removeIf(unfiltered, and(predicate, in(collection)));
+      return Iterables.removeIf(unfiltered, Predicates.<E>and(predicate, in(collection)));
     }
 
     @Override
     public boolean retainAll(final Collection<?> collection) {
-      return Iterables.removeIf(unfiltered, and(predicate, not(in(collection))));
+      return Iterables.removeIf(unfiltered, Predicates.<E>and(predicate, not(in(collection))));
     }
 
     @Override
